@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-[20px]
+  }
+
+  section {
+    @apply my-0 mx-auto pt-24 max-w-3xl
+  }
+
+  section h2::after {
+    @apply content-[''] block relative  w-60 h-px ml-4 bg-foreground bg-opacity-40
+  }
+
+  .disabled {
+    @apply border-foreground text-foreground cursor-not-allowed hover:bg-background blur-[.8px] !important
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-3
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-lg bg-foreground border-background border-4 border-solid
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background
+  }
+}
+
+@layer utilities {
+  .inline-link {
+    @apply relative text-primary font-medium
+  }
+
+  .inline-link::before {
+    @apply content-[''] block absolute w-full bottom-0 left-0 h-[2px] scale-x-0 origin-top-left bg-primary transition-transform duration-300
+  }
+
+  .inline-link:hover::before {
+    @apply scale-x-100
+  }
+
+  .hover-bounce:hover {
+    @apply animate-pulsate
+  }
+
+  .social-links a:last-child {
+    @apply mb-4
+  }
+
+  .social-links::after {
+    @apply content-[''] block w-px h-20 my-0 mx-auto bg-foreground
+  }
+
+  .inline-list li {
+    @apply list-none align-middle
+  }
+
+  .inline-list li::before {
+    @apply content-['▹'] text-primary text-sm pr-2
+  }
+
+  .backdrop-diamond::after {
+    @apply content-[''] block w-full h-full rounded border-2 border-primary absolute top-10 left-10 rotate-45 transition-transform duration-100
+  }
+
+  .backdrop-diamond {
+    @apply relative
+  }
+
+  .backdrop-diamond > * {
+    @apply absolute top-10 left-10 z-10
+  }
+
+  .backdrop-diamond:has(> *:hover)::after {
+    @apply scale-90
+  }
+
+  .primary-overlay::before {
+    @apply content-[''] block w-full h-full bg-primary absolute mix-blend-multiply rounded
+  }
+
+  .primary-overlay:hover::before {
+    @apply content-none
+  }
+}
