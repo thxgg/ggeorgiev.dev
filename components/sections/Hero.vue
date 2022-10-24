@@ -19,7 +19,7 @@
       >.
     </p>
     <div>
-      <base-button link="/snippets" :disabled="true" class="mt-10">
+      <base-button link="/snippets" class="mt-10">
         Check out my Snippets
       </base-button>
       <span class="ml-4 font-mono text-xs">Coming soon...</span>

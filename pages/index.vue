@@ -1,7 +1,9 @@
 <template>
-  <sections-hero />
-  <sections-about />
-  <sections-experience />
-  <sections-projects />
-  <sections-contact />
+  <div>
+    <sections-hero />
+    <sections-about />
+    <sections-experience />
+    <sections-projects />
+    <sections-contact />
+  </div>
 </template>

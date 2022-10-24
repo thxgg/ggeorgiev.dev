@@ -2,21 +2,21 @@
   <header
     class="fixed top-0 left-0 z-20 flex h-24 w-full items-center justify-between bg-background bg-opacity-80 px-12 font-mono text-xs backdrop-blur"
   >
-    <a href="/">
+    <nuxt-link href="/">
       <img src="/logo.svg" alt="logo" class="hover-bounce w-8" />
-    </a>
+    </nuxt-link>
     <nav class="space-x-8">
-      <a
+      <nuxt-link
         v-for="(link, index) of links"
-        :href="link.link"
+        :to="{ path: link.path, hash: link.hash }"
         class="font-medium tracking-tighter hover:text-primary"
       >
         <span class="text-primary">
           {{ index + 1 < 10 ? `0${index + 1}` : index + 1 }}.</span
         >
         {{ link.name }}
-      </a>
-      <base-button link="/resume.pdf">Resume</base-button>
+      </nuxt-link>
+      <base-button :external="true" link="/resume.pdf">Resume</base-button>
     </nav>
   </header>
 </template>
@@ -25,19 +25,23 @@
 const links = [
   {
     name: "About",
-    link: "/#about",
+    path: "/",
+    hash: "#about",
   },
   {
     name: "Experience",
-    link: "/#experience",
+    path: "/",
+    hash: "#experience",
   },
   {
     name: "Projects",
-    link: "/#projects",
+    path: "/",
+    hash: "#projects",
   },
   {
     name: "Contact",
-    link: "/#contact",
+    path: "/",
+    hash: "#contact",
   },
 ];
 </script>
