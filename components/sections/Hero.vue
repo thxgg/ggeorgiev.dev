@@ -18,8 +18,11 @@
         DevCraft</a
       >.
     </p>
-    <base-button link="/snippets" :disabled="true" class="mt-10">
-      Check out my Snippets
-    </base-button>
+    <div>
+      <base-button link="/snippets" :disabled="true" class="mt-10">
+        Check out my Snippets
+      </base-button>
+      <span class="ml-4 font-mono text-xs">Coming soon...</span>
+    </div>
   </section>
 </template>
