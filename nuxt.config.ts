@@ -23,5 +23,5 @@ export default defineNuxtConfig({
       "Space Mono": true,
     },
   },
-  css: ["@/assets/css/tailwind.css", "@/assets/css/accessibility.css"],
+  css: ["@/assets/css/tailwind.css"],
 });
