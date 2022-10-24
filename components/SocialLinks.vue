@@ -3,7 +3,7 @@
     <a
       v-for="social of socials"
       :href="social.link"
-      class="p-3 transition-all duration-500 ease-in-out hover:-translate-y-2 hover:text-primary"
+      class="p-2 transition-all duration-500 ease-in-out hover:-translate-y-1 hover:text-primary"
     >
       <Icon :name="social.icon" size="1.5rem" />
     </a>
@@ -13,7 +13,7 @@
   >
     <a
       href="mailto:gatanasovgeorgiev@gmail.com"
-      class="p-3 transition-all duration-500 ease-in-out hover:-translate-y-2 hover:text-primary"
+      class="p-2 transition-all duration-500 ease-in-out hover:-translate-y-1 hover:text-primary"
       style="writing-mode: vertical-rl"
     >
       gatanasovgeorgiev@gmail.com
