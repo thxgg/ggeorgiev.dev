@@ -8,7 +8,7 @@
   }
 
   section {
-    @apply my-0 mx-auto pt-24 max-w-3xl
+    @apply my-0 mx-auto py-[6.5rem] max-w-3xl
   }
 
   section h2::after {
@@ -34,7 +34,7 @@
 
 @layer utilities {
   .inline-link {
-    @apply relative text-primary font-medium
+    @apply relative text-primary
   }
 
   .inline-link::before {
@@ -58,11 +58,11 @@
   }
 
   .inline-list li {
-    @apply list-none align-middle
+    @apply list-none align-middle pl-5 relative
   }
 
   .inline-list li::before {
-    @apply content-['▹'] text-primary text-sm pr-2
+    @apply content-['▹'] text-primary  absolute left-0
   }
 
   .backdrop-diamond::after {
