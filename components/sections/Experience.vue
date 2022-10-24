@@ -1,6 +1,6 @@
 <template>
   <section id="experience" class="max-w-[700px]">
-    <h2 class="mt-2 mb-8 flex items-center text-2xl">
+    <h2 class="heading-line mt-2 mb-8 flex items-center text-2xl">
       <span class="mr-2 font-mono text-base text-primary">02.</span>
       <span class="font-black capitalize">My work experience</span>
     </h2>

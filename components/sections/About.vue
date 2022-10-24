@@ -1,6 +1,6 @@
 <template>
   <section id="about" class="max-w-[900px]">
-    <h2 class="mt-2 mb-8 flex items-center text-2xl">
+    <h2 class="heading-line mt-2 mb-8 flex items-center text-2xl">
       <span class="mr-2 font-mono text-base text-primary">01.</span>
       <span class="font-black">About Me</span>
     </h2>
