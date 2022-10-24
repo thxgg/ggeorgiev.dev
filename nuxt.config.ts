@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   meta: {
     title: "Georgi Georgiev",
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   },
   app: {
     head: {
