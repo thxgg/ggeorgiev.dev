@@ -9,9 +9,18 @@ module.exports = {
   darkMode: "class",
   theme: {
     colors: {
-      background: "#080818",
-      foreground: "#DADFE1",
-      primary: "#F4D03F",
+      background: {
+        bright: "#0F0F2E",
+        DEFAULT: "#080818",
+      },
+      foreground: {
+        DEFAULT: "#DADFE1",
+        dim: "#9AA7AC",
+      },
+      primary: {
+        DEFAULT: "#F4D03F",
+        dim: "#AE8D0A",
+      },
     },
     fontFamily: {
       sans: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
