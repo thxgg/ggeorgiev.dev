@@ -12,19 +12,17 @@
           algorithm competitions and slowly evolved into a more general interest
           in technology and software.
         </p>
-
         <p>
           Now as a grown-up, I am finishing my bachelor's degree at
           <a href="https://tudelft.nl" target="_blank" class="inline-link">
-            TU Delft
-          </a>
+            TU Delft</a
+          >
           and expanding my skills into areas like design, accessibility, DevOps
           and more. Enjoying the journey to a more complete developer.
         </p>
-
         <p>My current technology stack consists of:</p>
         <ul
-          class="inline-list text-thin grid grid-cols-2 grid-rows-3 gap-x-2 gap-y-1 font-mono text-xs"
+          class="inline-list text-thin grid grid-cols-2 grid-rows-3 gap-x-2 gap-y-1 font-mono text-xs text-foreground-dim"
         >
           <li>JavaScript (ES6+)</li>
           <li>Java</li>

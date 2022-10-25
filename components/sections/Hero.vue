@@ -7,7 +7,7 @@
       Hi, there! My name is
     </p>
     <h1 class="text-6xl font-black leading-tight">Georgi Georgiev.</h1>
-    <p class="text-5xl font-black leading-tight brightness-[.8]">
+    <p class="text-5xl font-black leading-tight text-foreground-dim">
       I create apps.
     </p>
     <p class="mt-4 max-w-lg">
@@ -19,10 +19,10 @@
       >.
     </p>
     <div>
-      <base-button link="/snippets" class="mt-10">
+      <base-button :disabled="true" link="/snippets" class="mt-10">
         Check out my Snippets
       </base-button>
-      <span class="ml-4 font-mono text-xs">Coming soon...</span>
+      <p class="ml-4 inline font-mono text-xs">Coming soon...</p>
     </div>
   </section>
 </template>

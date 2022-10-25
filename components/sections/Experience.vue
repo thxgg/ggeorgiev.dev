@@ -7,9 +7,9 @@
     <div class="grid grid-cols-[1fr_3fr]">
       <!-- TODO: Use tabs component -->
       <div class="flex items-center justify-center">
-        <span style="writing-mode: vertical-rl" class="rotate-180">
+        <p style="writing-mode: vertical-rl" class="rotate-180">
           Coming soon...
-        </span>
+        </p>
       </div>
       <div v-for="experience of experiences">
         <h3 class="mb-1 font-semibold">
@@ -26,7 +26,7 @@
           </span>
         </h3>
         <h4 class="mb-4 font-mono text-xs">{{ experience.duration }}</h4>
-        <ul class="inline-list space-y-2 text-sm">
+        <ul class="inline-list space-y-2 text-sm text-foreground-dim">
           <li v-for="note of experience.notes">{{ note }}</li>
         </ul>
       </div>
