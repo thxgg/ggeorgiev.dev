@@ -6,7 +6,6 @@
 * [About](#about)
 * [Experience](#experience)
 * [Projects](#projects)
-* [Snippets](/snippets)
 * [Contact](#contact)
 * [Resume](/resume.pdf)
 
@@ -53,12 +52,6 @@ years old with algorithm competitions and slowly evolved into a more general int
 
 ### Projects
 
-* Technologies (also as filters for projects)
-  * Vue
-  * Spring Boot
-  * PostgreSQL
-  * Heroku
-
 * Project cards
   * Name
   * Thumbnail?
@@ -72,7 +65,14 @@ years old with algorithm competitions and slowly evolved into a more general int
 * Copyright
   * Georgi Georgiev @ 2022
 
-## Ideas for next versions
+## TODOs
 
-* Use Nuxt Content to create md files for each project and use them as a separate page + generate the project cards
-* Code snippets (something akin to the weekly entries for DevCraft)
+* [ ] Refactor css file
+* [ ] Check for unnecessary classes
+* [ ] Add better transitions
+* [ ] Make design responsive
+* [ ] Fix cross-browser compatibility
+* [ ] Update resume
+* [ ] Use Nuxt Content for data management
+* [ ] Add Archive page
+* [ ] Add Snippets page
