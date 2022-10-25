@@ -1,71 +1,39 @@
 <template>
-  <article class="divide-y-2 divide-current border-2 border-current">
-    <!-- Title bar -->
-    <div class="flex flex-row justify-between p-2">
-      <div class="flex flex-1 items-center">
-        <Icon v-for="index in 3" :key="index" name="pixelarticons:circle" />
+  <article
+    class="project-card h-full cursor-pointer rounded bg-background-bright p-6 shadow-md hover:shadow-lg"
+  >
+    <header class="mb-6 flex items-center justify-between">
+      <Icon name="bx:folder" class="text-4xl text-primary" />
+      <div class="inline-flex space-x-4 text-xl">
+        <a
+          v-if="project.source"
+          :href="project.source"
+          target="_blank"
+          class="hover:text-primary"
+        >
+          <Icon name="bxl:github" />
+        </a>
+        <a :href="project.live" target="_blank" class="hover:text-primary">
+          <Icon name="bx:link-external" />
+        </a>
       </div>
-      <h2 class="text-xl">{{ project.name }}</h2>
-      <div class="flex-1"></div>
-    </div>
-    <!-- Thumbnail -->
-    <div>
-      <img
-        v-if="project.thumbnail"
-        :src="project.thumbnail"
-        :alt="`${project.name} thumbnail`"
-        class="aspect-video w-full object-cover object-top"
-      />
-      <img
-        v-else
-        :src="`https://via.placeholder.com/400x225?text=${project.name.replaceAll(
-          ' ',
-          '+'
-        )}`"
-        alt="Placeholder
-      thumbnail"
-        class="aspect-video w-full object-cover object-top"
-      />
-    </div>
-    <!-- Description -->
-    <div class="p-4">
-      <p>{{ project.description }}</p>
-    </div>
-    <!-- Links -->
-    <div
-      v-if="project.source || project.live"
-      class="flex divide-x-2 divide-current"
-    >
-      <!-- Source -->
-      <a
-        v-if="project.source"
-        :href="project.source"
-        target="_blank"
-        class="flex flex-grow items-center justify-center gap-1 p-1 hover:bg-foreground hover:text-background dark:hover:bg-background dark:hover:text-foreground"
-        ref="source"
+    </header>
+    <main>
+      <h4 class="mb-2 text-lg font-extrabold">{{ project.name }}</h4>
+      <p class="text-sm tracking-tight">{{ project.description }}</p>
+    </main>
+    <footer>
+      <ul
+        class="invisible-scroll mt-4 space-x-4 overflow-scroll font-mono text-[0.7rem] font-thin text-foreground-dim"
       >
-        Source
-        <Icon name="bx:link-external" />
-      </a>
-      <!-- Live -->
-      <a
-        v-if="project.live"
-        :href="project.live"
-        target="_blank"
-        class="flex flex-grow items-center justify-center gap-1 p-1 hover:bg-foreground hover:text-background dark:hover:bg-background dark:hover:text-foreground"
-      >
-        Live
-        <Icon name="bx:link-external" />
-      </a>
-    </div>
+        <li v-for="technology of project.technologies" class="inline">
+          {{ technology }}
+        </li>
+      </ul>
+    </footer>
   </article>
 </template>
 
 <script setup>
-const props = defineProps({
-  project: {
-    type: Object,
-    required: true,
-  },
-});
+defineProps(["project"]);
 </script>

@@ -4,7 +4,11 @@
 
 @layer base {
   html {
-    @apply text-[20px]
+    @apply text-[18px]
+  }
+
+  p {
+    @apply text-foreground-dim
   }
 
   section {
@@ -17,6 +21,10 @@
 
   .disabled {
     @apply border-foreground text-foreground cursor-not-allowed hover:bg-background blur-[.8px] !important
+  }
+
+  .disabled-blur {
+    @apply cursor-not-allowed hover:bg-background blur-[.8px] !important
   }
 
   ::-webkit-scrollbar {
@@ -34,11 +42,11 @@
 
 @layer utilities {
   .inline-link {
-    @apply relative text-primary
+    @apply relative text-primary whitespace-nowrap
   }
 
   .inline-link::before {
-    @apply content-[''] block absolute w-full bottom-0 left-0 h-[2px] scale-x-0 origin-top-left bg-primary transition-transform duration-300
+    @apply content-[''] block absolute w-full bottom-0 left-0 h-[1px] scale-x-0 origin-top-left bg-primary transition-transform duration-300
   }
 
   .inline-link:hover::before {
@@ -81,11 +89,33 @@
     @apply scale-90
   }
 
+  .primary-overlay {
+    @apply relative
+  }
+
+  .primary-overlay > * {
+    @apply transition-all duration-[500ms] ease-[cubic-bezier(0.645,0.045,0.355,1)]
+  }
+
   .primary-overlay::before {
     @apply content-[''] block w-full h-full bg-primary absolute mix-blend-multiply rounded
   }
 
   .primary-overlay:hover::before {
     @apply content-none
+  }
+
+  .project-card:hover h4 {
+    @apply text-primary
+  }
+
+  .invisible-scroll {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .invisible-scroll::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
   }
 }
