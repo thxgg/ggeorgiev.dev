@@ -11,7 +11,7 @@
           :src="project.thumbnail"
           :alt="`${project.name} Thumbnail`"
           class="h-full w-full rounded object-cover object-top"
-        />
+        >
       </a>
     </div>
     <div
@@ -23,7 +23,9 @@
       <p class="my-1 font-mono text-xs capitalize text-primary">
         Featured project
       </p>
-      <h3 class="mb-4 text-xl font-extrabold">{{ project.name }}</h3>
+      <h3 class="mb-4 text-xl font-extrabold">
+        {{ project.name }}
+      </h3>
       <p
         class="rounded bg-background-bright p-6 text-sm shadow"
         :class="[`text-${alt ? 'end' : 'start'}`]"
@@ -33,7 +35,11 @@
       <ul
         class="my-4 space-x-4 font-mono text-xs font-light text-foreground-dim"
       >
-        <li v-for="technology of project.technologies" class="inline">
+        <li
+          v-for="(technology, index) in project.technologies"
+          :key="index"
+          class="inline"
+        >
           {{ technology }}
         </li>
       </ul>
@@ -54,6 +60,16 @@
   </article>
 </template>
 
-<script setup>
-defineProps(["project", "alt"]);
+<script setup lang="ts">
+defineProps<{
+    project: {
+      name: string,
+      description: string,
+      thumbnail: string,
+      technologies: Array<string>,
+      source?: string,
+      live: string
+    },
+    alt: Boolean
+  }>()
 </script>

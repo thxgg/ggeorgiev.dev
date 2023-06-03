@@ -2,6 +2,7 @@
   <div class="social-links fixed bottom-0 left-10 flex flex-col">
     <a
       v-for="social of socials"
+      :key="social.name"
       :href="social.link"
       class="p-2 transition-all duration-500 ease-in-out hover:-translate-y-1 hover:text-primary"
     >
@@ -21,28 +22,32 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const socials = [
   {
-    name: "GitHub",
-    link: "https://github.com/lol-iris",
-    icon: "bxl:github",
+    name: 'GitHub',
+    link: 'https://github.com/lol-iris',
+    icon: 'bxl:github'
   },
   {
-    name: "Discord",
-    link: "https://discord.com/users/108266380515622912",
-    icon: "bxl:discord-alt",
+    name: 'Discord',
+    link: 'https://discord.com/users/108266380515622912',
+    icon: 'bxl:discord-alt'
   },
   {
-    name: "Twitter",
-    link: "https://twitter.com/lol_iris1",
-    icon: "bxl:twitter",
+    name: 'Twitter',
+    link: 'https://twitter.com/lol_iris1',
+    icon: 'bxl:twitter'
   },
   {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/georgiageorgiev/",
-    icon: "bxl:linkedin",
+    name: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/georgiageorgiev/',
+    icon: 'bxl:linkedin'
   },
-  { name: "CodePen", link: "https://codepen.io/lol-iris", icon: "bxl:codepen" },
-];
+  {
+    name: 'CodePen',
+    link: 'https://codepen.io/lol-iris',
+    icon: 'bxl:codepen'
+  }
+]
 </script>

@@ -23,6 +23,10 @@
   </nuxt-link>
 </template>
 
-<script setup>
-defineProps(["link", "disabled", "external"]);
+<script setup lang="ts">
+defineProps<{
+    link: string,
+    disabled?: Boolean,
+    external?: Boolean
+  }>()
 </script>

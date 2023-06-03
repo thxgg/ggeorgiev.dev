@@ -10,9 +10,9 @@
       <span class="text-4xl font-black">Get in touch</span>
     </h2>
     <p class="text-center">
-      Although I’m not currently looking for any new opportunities, my inbox is
-      always open. Be it a question or just a spontaneous hello, feel free to
-      shoot me an email and I'll do my best to get back!
+      I’m currently looking for new opportunities. Be it a question or just a
+      spontaneous hello, feel free to shoot me an email and I'll do my best to
+      get back!
     </p>
     <base-button
       link="mailto:gatanasovgeorgiev@gmail.com?subject=Hello&body=Hello%2C%20I%20wanna%20tell%20you%20about%20my%20amazing%20idea..."

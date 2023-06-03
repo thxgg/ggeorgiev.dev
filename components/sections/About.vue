@@ -15,8 +15,7 @@
         <p>
           Now as a grown-up, I am finishing my bachelor's degree at
           <a href="https://tudelft.nl" target="_blank" class="inline-link">
-            TU Delft</a
-          >
+            TU Delft</a>
           and expanding my skills into areas like design, accessibility, DevOps
           and more. Enjoying the journey to a more complete developer.
         </p>
@@ -38,11 +37,9 @@
             src="/me.jpg"
             alt="Me"
             class="h-full w-full rounded object-cover object-top"
-          />
+          >
         </div>
       </div>
     </div>
   </section>
 </template>
-
-<script setup></script>

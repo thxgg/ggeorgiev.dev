@@ -13,20 +13,28 @@
         >
           <Icon name="bxl:github" />
         </a>
-        <a :href="project.live" target="_blank" class="hover:text-primary">
+        <a :href="project.live" class="hover:text-primary" target="_blank">
           <Icon name="bx:link-external" />
         </a>
       </div>
     </header>
     <main>
-      <h4 class="mb-2 text-lg font-extrabold">{{ project.name }}</h4>
-      <p class="text-sm tracking-tight">{{ project.description }}</p>
+      <h4 class="mb-2 text-lg font-extrabold">
+        {{ project.name }}
+      </h4>
+      <p class="text-sm tracking-tight">
+        {{ project.description }}
+      </p>
     </main>
     <footer>
       <ul
         class="invisible-scroll mt-4 space-x-4 overflow-scroll font-mono text-[0.7rem] font-thin text-foreground-dim"
       >
-        <li v-for="technology of project.technologies" class="inline">
+        <li
+          v-for="(technology, index) of project.technologies"
+          :key="index"
+          class="inline"
+        >
           {{ technology }}
         </li>
       </ul>
@@ -34,6 +42,14 @@
   </article>
 </template>
 
-<script setup>
-defineProps(["project"]);
+<script setup lang="ts">
+defineProps<{
+    project: {
+      name: string,
+      description: string,
+      technologies: Array<string>,
+      source?: string,
+      live: string
+    }
+  }>()
 </script>
