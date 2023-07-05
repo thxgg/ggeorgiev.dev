@@ -36,7 +36,7 @@
           <img
             src="/me.jpg"
             alt="Me"
-            class="h-full w-full rounded object-cover object-top"
+            class="h-full w-full rounded object-cover object-center"
           >
         </div>
       </div>
