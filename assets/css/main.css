@@ -1,10 +1,10 @@
-.dark-mode {
+.dark {
   --background: theme('colors.slate.900');
   --accent: theme('colors.yellow.300');
   --primary: theme('colors.white');
 }
 
-.light-mode {
+.light {
   --background: theme('colors.gray.100');
   --accent: theme('colors.yellow.500');
   --primary: theme('colors.slate.800');

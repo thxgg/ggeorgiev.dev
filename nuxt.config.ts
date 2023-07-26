@@ -6,6 +6,10 @@ export default defineNuxtConfig({
     "nuxt-icon",
   ],
 
+  colorMode: {
+    classSuffix: "",
+  },
+
   app: {
     head: {
       htmlAttrs: { lang: "en" },
@@ -19,6 +23,7 @@ export default defineNuxtConfig({
     families: {
       Rubik: true,
     },
+    preload: true,
   },
 
   css: ["@/assets/css/tailwind.css", "@/assets/css/main.css"],

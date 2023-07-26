@@ -7,13 +7,19 @@
       <h2 class="text-xl font-semibold text-center mb-8">Current</h2>
       <ul class="flex flex-wrap gap-4 text-4xl justify-center">
         <li v-for="technology of currentTechnologies" :key="technology.name">
-          <Icon :name="technology.icon" />
+          <Icon
+            :name="technology.icon"
+            class="rounded-xl bg-gray-100 p-2 w-14 h-14"
+          />
         </li>
       </ul>
       <h2 class="text-xl font-semibold text-center my-8">Experience</h2>
       <ul class="flex flex-wrap gap-4 text-4xl justify-center">
         <li v-for="technology of experienceTechnologies" :key="technology.name">
-          <Icon :name="technology.icon" />
+          <Icon
+            :name="technology.icon"
+            class="rounded-xl bg-gray-100 p-2 w-14 h-14"
+          />
         </li>
       </ul>
     </section>

@@ -1,6 +1,6 @@
 <template>
   <article
-    class="border-2 p-4 border-slate-900/30 shadow-lg hover:border-primary flex flex-col gap-6"
+    class="border-2 p-4 border-slate-900/30 dark:border-white/30 shadow-lg hover:border-primary dark:hover:border-primary flex flex-col gap-6"
   >
     <div class="flex justify-between">
       <h2 class="text-2xl">{{ project.name }}</h2>
