@@ -1,0 +1,18 @@
+.dark-mode {
+  --background: theme('colors.slate.900');
+  --accent: theme('colors.yellow.300');
+  --primary: theme('colors.white');
+}
+
+.light-mode {
+  --background: theme('colors.gray.100');
+  --accent: theme('colors.yellow.500');
+  --primary: theme('colors.slate.800');
+}
+
+:root {
+  background-color: var(--background, theme('colors.slate.900'));
+  color: var(--primary, theme('colors.white'));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

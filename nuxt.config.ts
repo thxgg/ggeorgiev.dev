@@ -1,28 +1,25 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts',
-    'nuxt-icon'
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/google-fonts",
+    "@nuxtjs/color-mode",
+    "nuxt-icon",
   ],
+
   app: {
     head: {
-      title: 'Georgi Georgiev',
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-      htmlAttrs: {
-        lang: 'en'
-      },
-      bodyAttrs: {
-        class: 'font-sans text-foreground h-full antialiased'
-      }
-    }
+      htmlAttrs: { lang: "en" },
+      title: "Georgi Georgiev",
+    },
+    pageTransition: false,
+    layoutTransition: false,
   },
+
   googleFonts: {
     families: {
-      'Nunito Sans': true,
-      'Space Mono': true
-    }
+      Rubik: true,
+    },
   },
-  css: ['@/assets/css/tailwind.css']
+
+  css: ["@/assets/css/tailwind.css", "@/assets/css/main.css"],
 })

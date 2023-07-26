@@ -1,46 +1,5 @@
-# Nuxt 3 Minimal Starter
+**[thxgg.dev](https://thxgg.dev)**
 
-Look at
-the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction)
-to learn more.
+This is the code and content for my personal website, built in [Nuxt](https://nuxt.com/).
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out
-the [deployment documentation](https://nuxt.com/docs/getting-started/deployment)
-for more information.
+Following [Anthony Fu's example](https://github.com/antfu/antfu.me), the code is licensed under <a href='./LICENSE'>MIT</a>, and my words and original images are licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a>.
