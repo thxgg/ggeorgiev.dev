@@ -1,18 +1,18 @@
 .dark {
-  --background: theme('colors.slate.900');
-  --accent: theme('colors.yellow.300');
-  --primary: theme('colors.white');
+  --background:  rgb(76, 79, 105);
+  --accent: rgb(223, 142, 29);
+  --primary: rgb(239, 241, 245);
 }
 
 .light {
-  --background: theme('colors.gray.100');
-  --accent: theme('colors.yellow.500');
-  --primary: theme('colors.slate.800');
+  --background: rgb(239, 241, 245);
+  --accent: rgb(223, 142, 29);
+  --primary:  rgb(76, 79, 105);
 }
 
 :root {
-  background-color: var(--background, theme('colors.slate.900'));
-  color: var(--primary, theme('colors.white'));
+  background-color: var(--background,  rgb(76, 79, 105));
+  color: var(--primary, rgb(239, 241, 245));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
