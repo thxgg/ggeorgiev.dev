@@ -14,6 +14,7 @@
         >
           {{ name }}
         </NuxtLink>
+        <a href="/resume.pdf" target="_blank" class="underlined-link">Resumé</a>
       </template>
     </div>
     <div class="space-x-4 hidden md:block">
